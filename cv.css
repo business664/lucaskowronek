@@ -30,7 +30,7 @@
 
 /* Print / PDF — Ziel: 2 Seiten, ATS-freundlich */
 @media print {
-  header .btn, .lang-toggle { display: none !important; }
+  header { display: none !important; }
   html[lang="en"] .lang-de, html[lang="de"] .lang-en { display: none; }
   body { font-size: 10pt; color: #000; }
   main { max-width: 100%; padding: 0; }
@@ -42,6 +42,7 @@
   .entry { grid-template-columns: 150px 1fr; margin-bottom: 8px; break-inside: avoid; }
   .chip { background: none; color: #000; padding: 0; margin-right: 8px; }
   .chip::after { content: " ·"; }
+  .chips .chip:last-child::after { content: ""; }
   a { color: #000; text-decoration: none; }
   footer { padding: 8px 0 0; }
   @page { margin: 14mm; }
