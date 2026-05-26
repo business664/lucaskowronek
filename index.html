@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luca Skowronek — AI Engineer</title>
+  <meta name="description" content="Luca Skowronek — AI Engineer. Ich baue autonome Multi-Agent-Systeme mit der Anthropic Claude API. / I build autonomous multi-agent systems on the Anthropic Claude API." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="#hero">Luca Skowronek</a>
+    <div class="lang-toggle">
+      <button data-lang="de" type="button">DE</button>
+      <button data-lang="en" type="button">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img class="photo" src="assets/photo.jpg" alt="Luca Skowronek" />
+      <h1>Luca Skowronek</h1>
+      <p class="headline">
+        <span class="lang-de">AI Engineer — ich baue autonome Agent-Systeme</span>
+        <span class="lang-en">AI Engineer — I build autonomous agent systems</span>
+      </p>
+      <p class="pitch">
+        <span class="lang-de">Ich baue Systeme, in denen KI-Agenten echte Arbeit erledigen — und der Mensch an den entscheidenden Punkten die Kontrolle behält. In Produktion, nicht im Prototyp.</span>
+        <span class="lang-en">I build systems where AI agents do real work — and humans keep control at the decisive points. In production, not in prototypes.</span>
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://calendly.com/business-lucaskowronek">
+          <span class="lang-de">Gespräch buchen</span><span class="lang-en">Book a call</span>
+        </a>
+        <a class="btn btn-secondary" href="mailto:business@lucaskowronek.de">E-Mail</a>
+        <a class="btn btn-secondary" href="https://github.com/business664">GitHub</a>
+      </div>
+    </section>
+
+    <section id="was-ich-mache">
+      <h2><span class="lang-de">Was ich mache</span><span class="lang-en">What I do</span></h2>
+      <p>
+        <span class="lang-de">Ich entwerfe und betreibe Multi-Agent-Pipelines mit der Anthropic Claude API — von der Datenbeschaffung über die Verarbeitung bis zur Aktion. Ich route bewusst zwischen Modellen (starkes Sonnet fürs Denken, günstiges Haiku fürs Volumen), nutze Prompt-Caching und baue Human-in-the-Loop-Gates ein: Die Maschine schlägt vor, der Mensch entscheidet. Alles läuft 24/7 auf eigener Infrastruktur.</span>
+        <span class="lang-en">I design and operate multi-agent pipelines on the Anthropic Claude API — from data gathering through processing to action. I deliberately route between models (strong Sonnet for reasoning, cheap Haiku for volume), use prompt caching, and build human-in-the-loop gates: the machine proposes, the human decides. Everything runs 24/7 on my own infrastructure.</span>
+      </p>
+    </section>
+
+    <section id="projekte">
+      <h2><span class="lang-de">Projekte</span><span class="lang-en">Projects</span></h2>
+
+      <article class="card">
+        <h3>
+          <span class="lang-de">Beam Sites — autonomes Multi-Agent-System</span>
+          <span class="lang-en">Beam Sites — autonomous multi-agent system</span>
+        </h3>
+        <p>
+          <span class="lang-de">Findet Unternehmen mit veralteten Websites, baut ihnen automatisch eine moderne Vorschau-Website, schreibt eine persönliche Mail und erkennt Antworten — vollautomatisch. Warum es zählt: eine komplette agentische Pipeline in Produktion mit echten Kunden.</span>
+          <span class="lang-en">Finds businesses with outdated websites, automatically builds them a modern preview site, writes a personal email and detects replies — fully automated. Why it matters: a complete agentic pipeline in production with real customers.</span>
+        </p>
+        <div class="chips">
+          <span class="chip">10 Pipeline-Agenten (~6 LLM)</span>
+          <span class="chip">Sonnet/Haiku-Routing</span>
+          <span class="chip">Prompt-Caching</span>
+          <span class="chip">2 Human-Gates</span>
+          <span class="chip">~50 Outreach/Tag</span>
+          <span class="chip">~0,15 € / Lead</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">Slack</span>
+        </div>
+        <a href="https://beamsites.de">
+          <span class="lang-de">Live-Demos ansehen →</span><span class="lang-en">View live demos →</span>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="lang-de">Lead-Harvester — Datenpipeline ins CRM</span>
+          <span class="lang-en">Lead Harvester — data pipeline into CRM</span>
+        </h3>
+        <p>
+          <span class="lang-de">Gewinnt aus offenen Geodaten und Impressums-Seiten saubere, angereicherte Firmen-Leads und pusht sie direkt ins CRM. Warum es zählt: belastbares Daten-Engineering mit Tests und sauberer Deduplizierung.</span>
+          <span class="lang-en">Extracts clean, enriched company leads from open geo-data and legal-notice pages and pushes them straight into the CRM. Why it matters: solid data engineering with tests and clean deduplication.</span>
+        </p>
+        <div class="chips">
+          <span class="chip">OSM Overpass</span>
+          <span class="chip">Impressum-Crawl</span>
+          <span class="chip">Regex-Extraktion</span>
+          <span class="chip">Playwright</span>
+          <span class="chip">Nominatim</span>
+          <span class="chip">4-Layer-Dedupe</span>
+          <span class="chip">SalesSuite-API</span>
+          <span class="chip">83 pytest-Tests</span>
+          <span class="chip">~3.000 Leads/Lauf</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="lang-de">/council — Claude-Code-Skill</span>
+          <span class="lang-en">/council — Claude Code skill</span>
+        </h3>
+        <p>
+          <span class="lang-de">Ein eigenes Skill für Claude Code: fünf Business-Personas diskutieren eine Entscheidungsfrage in zwei Runden und liefern eine synthetisierte Empfehlung. Warum es zählt: ich erweitere Claude Code selbst, nicht nur die API.</span>
+          <span class="lang-en">A custom Claude Code skill: five business personas debate a decision in two rounds and deliver a synthesized recommendation. Why it matters: I extend Claude Code itself, not just the API.</span>
+        </p>
+        <div class="chips">
+          <span class="chip">Claude Code Skill</span>
+          <span class="chip">Subagents</span>
+          <span class="chip">Slash-Command</span>
+          <span class="chip">Multi-Persona-Orchestrierung</span>
+        </div>
+        <a href="https://github.com/business664/council">
+          <span class="lang-de">Repo ansehen →</span><span class="lang-en">View repo →</span>
+        </a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>LLM / Agents</h3>
+        <div class="chips">
+          <span class="chip">Anthropic Claude API</span>
+          <span class="chip">Tool-Use</span>
+          <span class="chip">Prompt-Caching</span>
+          <span class="chip">Modell-Routing</span>
+          <span class="chip">Multi-Agent-Orchestrierung</span>
+          <span class="chip">Claude Code (Skills, Subagents, Slash-Commands)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Python / Backend</h3>
+        <div class="chips">
+          <span class="chip">Python 3.12</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">Pydantic</span>
+          <span class="chip">pytest</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data / Scraping</h3>
+        <div class="chips">
+          <span class="chip">Apify</span>
+          <span class="chip">OSM Overpass</span>
+          <span class="chip">Impressum-/Multipage-Crawl</span>
+          <span class="chip">Regex-Extraktion</span>
+          <span class="chip">Playwright</span>
+          <span class="chip">Nominatim</span>
+          <span class="chip">Dedupe</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><span class="lang-de">Integrationen</span><span class="lang-en">Integrations</span></h3>
+        <div class="chips">
+          <span class="chip">Google Sheets (gspread)</span>
+          <span class="chip">Gmail IMAP/SMTP</span>
+          <span class="chip">Outlook OAuth2</span>
+          <span class="chip">SalesSuite</span>
+          <span class="chip">sevDesk</span>
+          <span class="chip">Slack</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>DevOps</h3>
+        <div class="chips">
+          <span class="chip">Hetzner</span>
+          <span class="chip">Nginx</span>
+          <span class="chip">Let's Encrypt</span>
+          <span class="chip">systemd</span>
+          <span class="chip">Cron</span>
+          <span class="chip">SCP</span>
+          <span class="chip">Cloudflare Pages</span>
+          <span class="chip">GitHub Pages</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="erfahrung">
+      <h2><span class="lang-de">Erfahrung</span><span class="lang-en">Experience</span></h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2022 <span class="lang-de">(1 Jahr)</span><span class="lang-en">(1 year)</span></span> —
+          <span class="lang-de">Senior Videograf</span><span class="lang-en">Senior Videographer</span>,
+          <span class="where">OD Solutions (solutions-od.de)</span>
+        </li>
+        <li>
+          <span class="when"><span class="lang-de">danach–heute</span><span class="lang-en">since then</span></span> —
+          <span class="where">Beam</span>:
+          <span class="lang-de">Video-Content (9:16), zunehmend automatisiert (DaVinci-Resolve-Scripting)</span>
+          <span class="lang-en">video content (9:16), increasingly automated (DaVinci Resolve scripting)</span>
+        </li>
+        <li>
+          <span class="when"><span class="lang-de">seit ~04/2026</span><span class="lang-en">since ~04/2026</span></span> —
+          <span class="lang-de">Fokus auf autonome AI-/Agent-Systeme</span>
+          <span class="lang-en">focus on autonomous AI / agent systems</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="kontakt">
+      <h2><span class="lang-de">Verfügbarkeit &amp; Kontakt</span><span class="lang-en">Availability &amp; contact</span></h2>
+      <p>
+        <span class="lang-de">Verfügbar für Teilzeit (~20–30 h/Woche, flexibel), Eintritt nach Absprache. Standort Hamburg, remote möglich.</span>
+        <span class="lang-en">Available part-time (~20–30 h/week, flexible), start by arrangement. Based in Hamburg, remote possible.</span>
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://calendly.com/business-lucaskowronek">
+          <span class="lang-de">Gespräch buchen</span><span class="lang-en">Book a call</span>
+        </a>
+        <a class="btn btn-secondary" href="mailto:business@lucaskowronek.de">E-Mail</a>
+        <a class="btn btn-secondary" href="https://github.com/business664">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Luca Skowronek</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

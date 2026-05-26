@@ -1,0 +1,6 @@
+# Interne Planungs-Dokumente (nicht oeffentlich)
+docs/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
